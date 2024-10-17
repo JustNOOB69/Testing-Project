@@ -6,47 +6,86 @@
     <title>Testing</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            box-sizing: border-box;
+        }
 
+        .pos {
+            position: relative;
+            height: 100vh;
+        }
+
+        table {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px solid rgba(245, 245, 245, 0.774);
+            color: rgb(223, 223, 223);
+            background-color: rgb(24, 113, 143);
+            text-shadow: 2px 2px 4px black;
+            transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        th:hover, td:hover {
+            background-color: rgb(56, 82, 136);
+            transform: scale(1.5);
+            box-shadow: 0 1px 8px 0 rgb(37, 62, 96);
+        }
+
+        td {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Country</th>
-            </tr>
-        </thead>
+    <div class="pos">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td>001</td>
-                <td>Lewis</td>
-                <td>Germany</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Lewis</td>
+                    <td>Germany</td>
+                </tr>
 
-            <tr>
-                <td>002</td>
-                <td>Justin</td>
-                <td>Belgium</td>
-            </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Justin</td>
+                    <td>Belgium</td>
+                </tr>
 
-            <tr>
-                <td>003</td>
-                <td>Alex</td>
-                <td>United States</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td>003</td>
+                    <td>Alex</td>
+                    <td>United States</td>
+                </tr>
+            </tbody>
 
-        <tfoot>
-            <tr>
-                <td>100</td>
-                <td>Kevin</td>
-                <td>United Kingdom</td>
-            </tr>
-        </tfoot>
-    </table>    
+            <tfoot>
+                <tr>
+                    <td>100</td>
+                    <td>Kevin</td>
+                    <td>United Kingdom</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>    
 </body>
 </html>
